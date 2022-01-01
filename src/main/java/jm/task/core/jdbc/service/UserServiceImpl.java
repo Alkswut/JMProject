@@ -1,31 +1,108 @@
 package jm.task.core.jdbc.service;
 
 import jm.task.core.jdbc.model.User;
+import jm.task.core.jdbc.util.Util;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
-    public void createUsersTable() {
+    private final Util util = new Util();
+    private Statement statement = null;
+
+    public UserServiceImpl() {
 
     }
 
-    public void dropUsersTable() {
+    public void createUsersTable() throws SQLException {
+        try {
+            statement = util.getConnection().createStatement();
+            String sql = "CREATE TABLE IF NOT EXISTS USERS" +
+                    "(ID BIGINT not null AUTO_INCREMENT, " +
+                    "name VARCHAR(255), " +
+                    "lastName VARCHAR(255), " +
+                    "age TINYINT, " +
+                    "PRIMARY KEY(ID))";
+            statement.execute(sql);
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        } finally {
+            statement.close();
+        }
 
     }
 
-    public void saveUser(String name, String lastName, byte age) {
+    public void dropUsersTable() throws SQLException {
+        try {
+            statement = util.getConnection().createStatement();
+            String sqlDelete = "DROP TABLE IF EXISTS USERS";
+            statement.execute(sqlDelete);
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        } finally {
+            statement.close();
+        }
+    }
+
+    public void saveUser(String name, String lastName, byte age) throws SQLException {
+        try {
+            statement = util.getConnection().createStatement();
+            String sqlAddUser = "INSERT INTO USERS(name,lastName,age) VALUES("
+                    + "'" + name.trim() + "'" + ","
+                    + "'" + lastName.trim() + "'" + ","
+                    + age + ")";
+            statement.execute(sqlAddUser);
+            System.out.println("User с " + name + " –  добавлен в базу данных");
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        } finally {
+            statement.close();
+        }
 
     }
 
-    public void removeUserById(long id) {
-
+    public void removeUserById(long id) throws SQLException {
+        try {
+            statement = util.getConnection().createStatement();
+            statement.execute("DELETE FROM USERS WHERE ID=" + id);
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        } finally {
+            statement.close();
+        }
     }
 
-    public List<User> getAllUsers() {
-        return null;
+    public List<User> getAllUsers() throws SQLException {
+        List<User> list = new ArrayList<>();
+        try {
+            statement = util.getConnection().createStatement();
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM USERS");
+            while (resultSet.next()) {
+                User user = new User(resultSet.getString("Name"),
+                        resultSet.getString("LastName"),
+                        resultSet.getByte("Age"));
+                user.setId(resultSet.getLong("ID"));
+                list.add(user);
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        } finally {
+            statement.close();
+        }
+        return list;
     }
 
-    public void cleanUsersTable() {
-
+    public void cleanUsersTable() throws SQLException {
+        try {
+            statement = util.getConnection().createStatement();
+            statement.execute("DELETE FROM USERS");
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        } finally {
+            statement.close();
+        }
     }
 }
