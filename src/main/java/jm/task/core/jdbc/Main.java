@@ -9,7 +9,6 @@ public class Main {
     public static void main(String[] args) throws SQLException {
         UserService userService = new UserServiceImpl();
         userService.createUsersTable();
-
         User user1 = new User("Иван1", "Иванов1", (byte) 18);
         User user2 = new User("Иван2", "Иванов2", (byte) 19);
         User user3 = new User("Иван3", "Иванов3", (byte) 20);
