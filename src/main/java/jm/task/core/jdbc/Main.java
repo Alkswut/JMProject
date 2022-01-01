@@ -14,6 +14,7 @@ public class Main {
         User user2 = new User("Иван2", "Иванов2", (byte) 19);
         User user3 = new User("Иван3", "Иванов3", (byte) 20);
         User user4 = new User("Иван4", "Иванов4", (byte) 21);
+
         userService.saveUser(user1.getName(), user1.getLastName(), user1.getAge());
         userService.saveUser(user2.getName(), user2.getLastName(), user2.getAge());
         userService.saveUser(user3.getName(), user3.getLastName(), user3.getAge());
