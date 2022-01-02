@@ -3,6 +3,7 @@ package jm.task.core.jdbc.service;
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.util.Util;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -49,12 +50,12 @@ public class UserServiceImpl implements UserService {
 
     public void saveUser(String name, String lastName, byte age) throws SQLException {
         try {
-            statement = util.getConnection().createStatement();
-            String sqlAddUser = "INSERT INTO USERS(name,lastName,age) VALUES("
-                    + "'" + name.trim() + "'" + ","
-                    + "'" + lastName.trim() + "'" + ","
-                    + age + ")";
-            statement.execute(sqlAddUser);
+            PreparedStatement preparedStatement = util.getConnection()
+                    .prepareStatement("INSERT INTO USERS(name,lastName,age) VALUES(?,?,?)");
+            preparedStatement.setString(1, name.trim());
+            preparedStatement.setString(2, lastName.trim());
+            preparedStatement.setByte(3, age);
+            preparedStatement.executeUpdate();
             System.out.println("User с " + name + " –  добавлен в базу данных");
         } catch (SQLException e) {
             System.out.println(e.getMessage());

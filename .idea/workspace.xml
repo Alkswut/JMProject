@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45d05761-ff0a-4484-81df-53d61c8371d1" name="Changes" comment="">
+    <list default="true" id="45d05761-ff0a-4484-81df-53d61c8371d1" name="Changes" comment="Task_1_1_3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +65,7 @@
     <property name="project.structure.side.proportion" value="0.33103448" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jm.task.core.jdbc.Main" />
       <module name="JMProjects" />
@@ -119,8 +120,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserServiceTest.createUsersTable" />
         <item itemvalue="JUnit.UserServiceTest.dropUsersTable" />
         <item itemvalue="JUnit.UserServiceTest.cleanUsersTable" />
@@ -147,7 +148,7 @@
       <workItem from="1641070424822" duration="278000" />
       <workItem from="1641070771618" duration="202000" />
       <workItem from="1641071053764" duration="270000" />
-      <workItem from="1641071383573" duration="299000" />
+      <workItem from="1641071383573" duration="2253000" />
     </task>
     <task id="LOCAL-00001" summary="Task_1_1_3">
       <created>1641068386599</created>
@@ -177,7 +178,35 @@
       <option name="project" value="LOCAL" />
       <updated>1641071235468</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Task_1_1_3">
+      <created>1641071765245</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1641071765245</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Task_1_1_3">
+      <created>1641071900162</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1641071900162</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Task_1_1_3">
+      <created>1641071925524</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1641071925524</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Task_1_1_3">
+      <created>1641071944818</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1641071944818</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
