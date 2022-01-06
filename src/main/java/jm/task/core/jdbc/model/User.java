@@ -79,13 +79,12 @@ public class User {
             return false;
         }
         User user = (User) o;
-        return Objects.equals(id, user.id) && Objects.equals(name, user.name)
-                && Objects.equals(lastName, user.lastName)
+        return Objects.equals(name, user.name) && Objects.equals(lastName, user.lastName)
                 && Objects.equals(age, user.age);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, lastName, age);
+        return Objects.hash(name, lastName, age);
     }
 }

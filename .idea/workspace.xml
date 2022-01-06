@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45d05761-ff0a-4484-81df-53d61c8371d1" name="Changes" comment="Task_1_1_3(UPD)">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7f0fbec6-f6c1-4d9c-b38e-092d04d61af0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7f0fbec6-f6c1-4d9c-b38e-092d04d61af0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/model/User.java" afterDir="false" />
+    <list default="true" id="45d05761-ff0a-4484-81df-53d61c8371d1" name="Changes" comment="Task_1_1_3 (UPD_Finish)">
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoJDBCImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoJDBCImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/model/User.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +162,7 @@
       <workItem from="1641151926569" duration="14000" />
       <workItem from="1641152320704" duration="1488000" />
       <workItem from="1641207100889" duration="457000" />
-      <workItem from="1641480895424" duration="659000" />
+      <workItem from="1641480895424" duration="764000" />
     </task>
     <task id="LOCAL-00001" summary="Task_1_1_3">
       <created>1641068386599</created>
@@ -236,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641207445661</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Task_1_1_3(UPD_Finish)">
+      <created>1641481574258</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1641481574258</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +301,8 @@
     </ignored-roots>
     <MESSAGE value="Task_1_1_3" />
     <MESSAGE value="Task_1_1_3(UPD)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task_1_1_3(UPD)" />
+    <MESSAGE value="Task_1_1_3(UPD_Finish)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task_1_1_3(UPD_Finish)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/JMProjects$Main.ic" NAME="Main Coverage Results" MODIFIED="1640807750226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
